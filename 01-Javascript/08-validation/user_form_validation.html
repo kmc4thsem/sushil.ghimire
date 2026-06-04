@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function validateData() {
+            let username = document.getElementById("username").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            let confirm_password = document.getElementById("confirm_password").value;
+
+            if (username == "" || phone == "" || password == "" || confirm_password == "") {
+                alert("All fields are required.");
+                return false;
+            }
+            else if (phone.length < 10 || phone.length > 10) {
+                alert("Phone number must be 10 digits long.");
+                return false;
+            }
+            else if (isNaN(phone)) {
+                alert("Phone number must be numeric.");
+                return false;
+            }
+            else if (password != confirm_password) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            else {
+                alert("Form submitted successfully!");
+                return true;
+            }
+
+        }
+    </script>
+    <form onsubmit="return validateData();" action="kmc.html">
+        Username: <input type="text" id="username"><br><br>
+        phone: <input type="text" id="phone"><br><br>
+        password: <input type="password" id="password"><br><br>
+        confirm password: <input type="password" id="confirm_password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

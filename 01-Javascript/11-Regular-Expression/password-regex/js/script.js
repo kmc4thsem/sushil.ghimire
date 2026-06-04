@@ -5,6 +5,9 @@ function validate() {
 
     let pattern =
         /^(?=.*[A-Z])(?=.*[0-9]).{8,}$/;
-
-    alert(pattern.test(password));
+    if (!pattern.test(password)) {
+        alert("Password is not valid");
+    } else {
+        alert("Password is valid");
+    }
 }

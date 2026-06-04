@@ -1,4 +1,4 @@
-const multiply = (a,b) => a*b;
+const multiply = (a, b) => a * b;
 
 document.getElementById("output").innerHTML =
-"Result = " + multiply(5,4);
+    "Result = " + multiply(5, 4);

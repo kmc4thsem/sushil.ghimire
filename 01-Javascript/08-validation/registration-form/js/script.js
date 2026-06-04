@@ -1,12 +1,12 @@
-function validateForm(){
+function validateForm() {
 
     let name =
-    document.getElementById("name").value;
+        document.getElementById("name").value;
 
     let email =
-    document.getElementById("email").value;
+        document.getElementById("email").value;
 
-    if(name === "" || email === ""){
+    if (name === "" || email === "") {
         alert("All Fields Required");
         return false;
     }

@@ -1,12 +1,12 @@
-function validateEmail(){
+function validateEmail() {
 
     let email =
-    document.getElementById("email").value;
+        document.getElementById("email").value;
 
-    if(email.includes("@")){
+    if (email.includes("@")) {
         alert("Valid Email");
     }
-    else{
+    else {
         alert("Invalid Email");
     }
 }

@@ -1,6 +1,8 @@
 function createCookie() {
-    document.cookie =
-        "name=Ram; max-age=3600";
+    const inputEmail = document.getElementById("email").value;
 
-    alert("Cookie Created");
+    document.cookie = `email=${inputEmail}; max-age=3600`;
+
+    document.getElementById("cookie").innerHTML =
+        "Cookie created with email: " + inputEmail;
 }
