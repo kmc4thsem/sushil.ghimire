@@ -1,9 +1,9 @@
-function validate(){
+function validate() {
 
     let name =
-    document.getElementById("name").value;
+        document.getElementById("name").value;
 
-    if(name === ""){
+    if (name === "") {
         alert("Name Required");
         return false;
     }
