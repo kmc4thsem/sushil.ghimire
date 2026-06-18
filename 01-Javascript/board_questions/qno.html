@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Highlight Long Words</title>
+</head>
+
+<body>
+
+    <p id="para">
+        JavaScript programming language provides functionality for interactive webpages and applications.
+    </p>
+
+    <button onclick="highlightWords()">Highlight Words</button>
+
+    <script>
+        function highlightWords() {
+            let paragraph = document.getElementById("para");
+
+            paragraph.innerHTML = paragraph.innerHTML.replace(
+                /\b\w{9,}\b/g,
+                '<span style="background-color:red;">$&</span>'
+            );
+        }
+    </script>
+
+</body>
+
+</html>
