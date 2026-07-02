@@ -1,0 +1,24 @@
+<?php
+
+$day = 3;
+
+switch ($day) {
+
+    case 1:
+        echo "Sunday";
+        break;
+
+    case 2:
+        echo "Monday";
+        break;
+
+    case 3:
+        echo "Tuesday";
+        break;
+
+    default:
+        echo "Invalid Day";
+
+}
+
+?>
