@@ -1,4 +1,4 @@
-let students = ["Ram","Sita","Hari"];
+let students = ["Ram", "Sita", "Hari"];
 
 document.getElementById("output").innerHTML =
-students;
+    students; 
