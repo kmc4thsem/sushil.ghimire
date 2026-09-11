@@ -97,7 +97,6 @@ function createStudent($conn)
     $email = input("Enter email: ");
     $age = input("Enter age: ");
     $course = input("Enter course: ");
-
     $name = mysqli_real_escape_string($conn, $name);
     $email = mysqli_real_escape_string($conn, $email);
     $course = mysqli_real_escape_string($conn, $course);

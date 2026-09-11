@@ -26,4 +26,7 @@ if (!$conn) {
         . mysqli_connect_error()
         . PHP_EOL
     );
+} 
+else {
+    echo "Database connection successful!" . PHP_EOL;
 }
