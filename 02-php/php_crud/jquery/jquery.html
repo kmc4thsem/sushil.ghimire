@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1 id="title">Hello Students</h1>
+    <p class="info">This is a paragraph.</p>
+    <button id="changeText">Change Text</button>
+    <button id="changeColor">Change Color</button>
+    <button id="addItem">Add List Item</button>
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+
+            // Change text content
+            $("#changeText").click(function () {
+                $("#title").text("Text Changed with jQuery!");
+            });
+
+            // Change CSS
+            $("#changeColor").click(function () {
+                $(".info").css("color", "red").css("font-weight", "bold");
+            });
+
+            // Add new elements
+            $("#addItem").click(function () {
+                $("#list").append("<li>New Item</li>");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        img {
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="myImage" src="flower.jpg" alt="Flower">
+    <br>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <button id="fadeBtn">Fade Toggle</button>
+    <button id="slideBtn">Slide Toggle</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#hideBtn").click(function () {
+                $("#myImage").hide(1000);        // hides over 1 second
+            });
+
+            $("#showBtn").click(function () {
+                $("#myImage").show(1000);
+            });
+
+            $("#toggleBtn").click(function () {
+                $("#myImage").toggle(500);       // switches between hide/show
+            });
+
+            $("#fadeBtn").click(function () {
+                $("#myImage").fadeToggle(800);   // fade in/out effect
+            });
+
+            $("#slideBtn").click(function () {
+                $("#myImage").slideToggle(800);  // slide up/down effect
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<style>
+    #draggable {
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    }
+
+    #droppable {
+        width: 150px;
+        height: 150px;
+        background: lightgray;
+        margin-top: 20px;
+    }
+</style>
+
+<div id="draggable">Drag me</div>
+<div id="droppable">Drop here</div>
+
+<script>
+    $(function () {
+        $("#draggable").draggable();
+        $("#droppable").droppable({
+            drop: function () {
+                $(this).css("background", "lightgreen").text("Dropped!");
+            }
+        });
+    });
+</script>
